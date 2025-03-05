@@ -41,7 +41,7 @@
 
     <div class="music-player">
         <audio id="musicPlayer" controls autoplay>
-            <source src="cancion1.mp3" type="audio/mpeg">
+            <source id="audioSource" src="CLAIRE.LUNE.mp3" type="audio/mpeg">
             Tu navegador no soporta audio.
         </audio>
     </div>
@@ -53,7 +53,7 @@
         <div class="book" onclick="openBook('DIARIO.LOCO.pdf')">Diario de un Loco</div>
         <div class="book" onclick="openBook('EL.IDIOTA.pdf')">El Idiota</div>
         <div class="book" onclick="openBook('EL.VIYI.pdf')">El Viyi</div>
-        <div class="book" onclick="openBook('HERMANOS.KARAMAZOV.pdf')">Los Hermanos Kazramazov</div>
+        <div class="book" onclick="openBook('HERMANOS.KARAMAZOV.pdf')">Los Hermanos Karamazov</div>
         <div class="book" onclick="openBook('LA.NARIZ.pdf')">La Nariz</div>
         <div class="book" onclick="openBook('LOS.DEMONIOS.pdf')">Los Demonios</div>
         <div class="book" onclick="openBook('MEMORIAS.SUBUSELO.pdf')">Memorias del Subsuelo</div>
@@ -66,13 +66,16 @@
         }
 
         const player = document.getElementById("musicPlayer");
+        const audioSource = document.getElementById("audioSource");
+
         const songs = ["CLAIRE.LUNE.mp3", "MOONLIGHT.mp3", "NOCTURNE.9.mp3"]; // Agregá más canciones aquí
         let currentSong = 0;
 
         player.onended = function () {
             currentSong = (currentSong + 1) % songs.length;
-            player.src = songs[currentSong];
-            player.play();
+            audioSource.src = songs[currentSong]; // Cambia la canción
+            player.load(); // Recarga el reproductor con la nueva canción
+            player.play(); // Reproduce la nueva canción
         };
     </script>
 </body>
