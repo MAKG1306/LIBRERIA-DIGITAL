@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Mi Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f1e4;
+            text-align: center;
+        }
+        .library {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .book {
+            width: 150px;
+            height: 200px;
+            background-color: #c49a6c;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .music-player {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biblioteca de Mi Amor</h1>
+    <p>Una colección especial solo para ti 💖</p>
 
+    <div class="music-player">
+        <audio id="musicPlayer" controls autoplay>
+            <source src="cancion1.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+        </audio>
+    </div>
+
+    <div class="library">
+        <div class="book" onclick="openBook('libro1.pdf')">Libro 1</div>
+        <div class="book" onclick="openBook('libro2.pdf')">Libro 2</div>
+        <div class="book" onclick="openBook('libro3.pdf')">Libro 3</div>
+        <!-- Agrega más libros aquí -->
+    </div>
+
+    <script>
+        function openBook(pdf) {
+            window.open(pdf, '_blank');
+        }
+
+        const player = document.getElementById("musicPlayer");
+        const songs = ["cancion1.mp3", "cancion2.mp3", "cancion3.mp3"]; // Agregá más canciones aquí
+        let currentSong = 0;
+
+        player.onended = function () {
+            currentSong = (currentSong + 1) % songs.length;
+            player.src = songs[currentSong];
+            player.play();
+        };
+    </script>
+</body>
+</html>
