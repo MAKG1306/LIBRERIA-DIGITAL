@@ -39,32 +39,33 @@
             gap: 20px;
             padding: 10px;
         }
-        .book {
-            width: 250px;
-            height: 350px;
-            background-image: url('cover1.jpg');
-            background-size: cover;
-            background-position: center;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-            font-size: 1.6em;
-            text-align: center;
-            padding: 10px;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            max-width: 40%;
-            line-height: 1.2;
-            display: flex;
-            flex-direction: column;
-            white-space: normal;
-        }
+       .book {
+    width: 250px;
+    height: 350px;
+    background-image: url('cover1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.4em; /* Reduce un poco el tamaño para mejor ajuste */
+    text-align: center;
+    padding: 5px; /* Reduce padding para más espacio interno */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    max-width: 90%; /* Permite que el texto ocupe más espacio */
+    line-height: 1.1; /* Reduce el espacio entre líneas */
+    display: flex;
+    flex-direction: column;
+}
         .book:hover {
             transform: scale(1.1);
         }
