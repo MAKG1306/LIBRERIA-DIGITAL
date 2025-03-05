@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca de Mi Amor</title>
+    <title>Biblioteca de Mi Madeline</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,7 +36,7 @@
     </style>
 </head>
 <body>
-    <h1>Biblioteca de Mi Amor</h1>
+    <h1>Biblioteca de Mi Madeline</h1>
     <p>Una colección especial solo para ti 💖</p>
 
     <div class="music-player">
@@ -47,9 +47,16 @@
     </div>
 
     <div class="library">
-        <div class="book" onclick="openBook('libro1.pdf')">Libro 1</div>
-        <div class="book" onclick="openBook('libro2.pdf')">Libro 2</div>
-        <div class="book" onclick="openBook('libro3.pdf')">Libro 3</div>
+        <div class="book" onclick="openBook('ALMAS.MUERTAS.pdf')">Almas Muertas</div>
+        <div class="book" onclick="openBook('CAPOTE.pdf')">El Capote</div>
+        <div class="book" onclick="openBook('CRIMEN.CASTIGO.pdf')">Crimen y Castigo</div>
+        <div class="book" onclick="openBook('DIARIO.LOCO.pdf')">Diario de un Loco</div>
+        <div class="book" onclick="openBook('EL.IDIOTA.pdf')">El Idiota</div>
+        <div class="book" onclick="openBook('EL.VIYI.pdf')">El Viyi</div>
+        <div class="book" onclick="openBook('HERMANOS.KARAMAZOV.pdf')">Los Hermanos Kazramazov</div>
+        <div class="book" onclick="openBook('LA.NARIZ.pdf')">La Nariz</div>
+        <div class="book" onclick="openBook('LOS.DEMONIOS.pdf')">Los Demonios</div>
+        <div class="book" onclick="openBook('MEMORIAS.SUBUSELO.pdf')">Memorias del Subsuelo</div>
         <!-- Agrega más libros aquí -->
     </div>
 
@@ -59,7 +66,7 @@
         }
 
         const player = document.getElementById("musicPlayer");
-        const songs = ["cancion1.mp3", "cancion2.mp3", "cancion3.mp3"]; // Agregá más canciones aquí
+        const songs = ["CLAIRE.LUNE.mp3", "MOONLIGHT.mp3", "NOCTURNE.9.mp3"]; // Agregá más canciones aquí
         let currentSong = 0;
 
         player.onended = function () {
