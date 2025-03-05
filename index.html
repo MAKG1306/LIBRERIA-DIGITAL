@@ -6,15 +6,21 @@
     <title>Biblioteca de Mi Madeline</title>
     <style>
         body {
-    font-family: 'Merriweather', serif;
-    background-image: url('https://makg1306.github.io/LIBRERIA-DIGITAL/fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
+            font-family: 'Merriweather', serif;
+            background-image: url('https://makg1306.github.io/LIBRERIA-DIGITAL/fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .title-container {
+            background: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
         .library {
             display: flex;
             flex-wrap: wrap;
@@ -44,7 +50,7 @@
         }
         h1 {
             font-size: 3em;
-            margin-top: 20px;
+            margin: 0;
         }
         p {
             font-size: 1.2em;
@@ -53,7 +59,9 @@
     </style>
 </head>
 <body>
-    <h1>Biblioteca de Mi Madeline</h1>
+    <div class="title-container">
+        <h1>Biblioteca de Mi Madeline</h1>
+    </div>
     <p>Una colección especial solo para ti 💖</p>
 
     <div class="music-player">
