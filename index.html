@@ -58,7 +58,6 @@
             transition: transform 0.3s ease-in-out;
             font-size: 1.4em;
             line-height: 1.2;
-            display: flex;
             flex-direction: column;
             max-width: 90%;
             word-wrap: break-word;
@@ -68,7 +67,7 @@
         .book span {
             display: block;
             text-align: center;
-            word-spacing: 100vw; /* Fuerza que cada palabra esté en su propia línea */
+            word-spacing: 100vw;
         }
         .book:hover {
             transform: scale(1.1);
@@ -102,6 +101,7 @@
         </audio>
     </div>
 
+    <!-- LIBROS ORIGINALES -->
     <div class="library">
         <div class="book" onclick="openBook('ALMAS.MUERTAS.pdf')"><span>Almas Muertas</span></div>
         <div class="book" onclick="openBook('CAPOTE.pdf')"><span>El Capote</span></div>
@@ -113,6 +113,19 @@
         <div class="book" onclick="openBook('LA.NARIZ.pdf')"><span>La Nariz</span></div>
         <div class="book" onclick="openBook('LOS.DEMONIOS.pdf')"><span>Los Demonios</span></div>
         <div class="book" onclick="openBook('MEMORIAS.SUBSUELO.pdf')"><span>Memorias del Subsuelo</span></div>
+    </div>
+
+    <!-- NUEVA SECCIÓN: VILLANOS DISNEY -->
+    <div class="subtitle-container">
+        <p>Villanos de Disney</p>
+    </div>
+
+    <div class="library">
+        <div class="book" onclick="openBook('FAIREST.OF.ALL.pdf')"><span>Fairest of All<br><small>(Evil Queen)</small></span></div>
+        <div class="book" onclick="openBook('THE.BEAST.WITHIN.pdf')"><span>The Beast Within<br><small>(The Prince)</small></span></div>
+        <div class="book" onclick="openBook('POOR.UNFORTUNATE.SOUL.pdf')"><span>Poor Unfortunate Soul<br><small>(Ursula)</small></span></div>
+        <div class="book" onclick="openBook('MISTRESS.OF.EVIL.pdf')"><span>Mistress of All Evil<br><small>(Maleficent)</small></span></div>
+        <div class="book" onclick="openBook('MOTHER.KNOWS.BEST.pdf')"><span>Mother Knows Best<br><small>(Gothel)</small></span></div>
     </div>
 
     <script>
